@@ -172,6 +172,7 @@ footer .container {
 	line-height: 1;
 	padding: 16px 0;
 	transition: color 0.3s ease;
+	text-wrap: balance;
 
 	@media (hover:hover) {
 		& a:hover {

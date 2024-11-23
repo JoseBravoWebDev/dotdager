@@ -1,0 +1,443 @@
+/* Home Section */
+#home {
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.75) 50%),url("../assets/img/imagen.png");
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+	.container {
+		width: 100vw;
+		height: calc(100svh - var(--header-height) / 10);
+		min-height: 400px;
+		max-height: 750px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+
+		.mobile-img {
+			display: none;
+		}
+
+		.title-container {
+			display: grid;
+			gap: var(--content-gap);
+			text-shadow: 1px -1px black;
+
+			.special {
+				font-size: 35px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#home {
+		.container {
+			height: calc(100svh - var(--header-height) / 10);
+			display: grid;
+			grid-template-columns: none;
+			align-items: center;
+		}
+	}
+}
+
+#about {
+	height: fit-content;
+	padding: var(--section-padding);
+
+	.container {
+		display: grid;
+		gap: var(--title-gap);
+
+		.about-card {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+
+			.about-img {
+				& img {
+					width: 70%;
+				}
+			}
+
+			.about-content {
+				display: grid;
+				gap: var(--content-gap);
+
+				& ul {
+					& li {
+						display: flex;
+						gap: 8px;
+						align-items: center;
+					}
+
+					& li:last-of-type {
+						& strong {
+							color: limegreen !important;
+						}
+					}
+				}
+
+				& ul li:nth-child(1)::before {
+					content: url(../assets/icons/codigo.png);
+					width: 16px;
+					height: 20px;
+				}
+
+				& ul li:nth-child(2)::before {
+					content: url(../assets/icons/gato.png);
+					width: 16px;
+					height: 20px;
+				}
+
+				& ul li:nth-child(3)::before {
+					content: url(../assets/icons/guitarra-electrica.png);
+					width: 16px;
+					height: 20px;
+				}
+
+				& ul li:nth-child(4)::before {
+					content: url(../assets/icons/filosofo.png);
+					width: 16px;
+					height: 20px;
+				}
+
+				& ul li:nth-child(5)::before {
+					content: url(../assets/icons/pepinillo.png);
+					width: 16px;
+					height: 18px;
+				}
+
+				.skills {
+					margin-top: 16px;
+					text-align: center;
+					display: grid;
+					gap: var(--content-gap);
+
+					.stack-logos {
+						margin-top: 16px;
+						display: flex;
+						gap: 16px;
+						justify-content: center;
+						align-items: center;
+					}
+
+					@media (hover:hover) {
+						.stack-logos img:hover {
+							cursor: pointer;
+							transform: translateY(-5px);
+							transition: .3s ease;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+@media screen and (max-width: 1000px) {
+	#about {
+		.container {
+			display: grid;
+			gap: var(--title-gap);
+
+			.about-card {
+				display: grid;
+				gap: var(--content-gap);
+				grid-template-columns: none;
+				align-items: center;
+				justify-content: center;
+
+				.about-img {
+					text-align: center;
+				}
+
+				.about-content {
+					.skills {
+						margin-top: 16px;
+						text-align: center;
+						display: flex;
+						flex-direction: column;
+						gap: var(--content-gap);
+
+						.stack-logos {
+							flex-wrap: wrap;
+						}
+
+						@media (hover:hover) {
+							.stack-logos img:hover {
+								cursor: pointer;
+								transform: translateY(-5px);
+								transition: .3s ease;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#about {
+		.container {
+			.about-card {
+				.about-content {
+					display: grid;
+					gap: var(--content-gap);
+
+					& ul {
+						& li {
+							margin: 16px 0;
+							display: flex;
+							gap: 0px;
+							align-items: center;
+							flex-wrap: wrap;
+							line-height: 1;
+						}
+					}
+
+					.skills {
+						margin-top: 16px;
+						text-align: center;
+						display: grid;
+						gap: var(--content-gap);
+
+						.stack-logos {
+							margin-top: 16px;
+							display: flex;
+							gap: 16px;
+							justify-content: center;
+							align-items: center;
+						}
+
+						@media (hover:hover) {
+							.stack-logos img:hover {
+								cursor: pointer;
+								transform: translateY(-5px);
+								transition: .3s ease;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#services {
+	height: fit-content;
+	padding: var(--section-padding);
+
+	.container {
+		display: grid;
+		gap: var(--title-gap);
+
+		.service-list {
+			padding: 16px 0;
+			max-width: 1100px;
+			min-height: 700px;
+			margin-inline: auto;
+			display: grid; 
+		  grid-template-columns: 1fr 1fr 1fr; 
+		  grid-template-rows: 1fr 1fr 1fr; 
+		  align-items: stretch;
+		  gap: 16px; 
+		  grid-template-areas: 
+		    "performance full-stack mentorship"
+		    "api full-stack mentorship"
+		    "api pickles-solving web-development";
+
+		  --opacity: .7;
+
+		  & div {
+		  	cursor: pointer;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+		  	gap: 8px;
+		  	padding: 16px;
+		  	border-radius: 20px;
+		  	transition: transform .5s ease-in-out;
+
+		  	& h4 {
+		  		color: var(--tertiary);
+		  	}
+
+		  	& h4, p {
+		  		text-shadow: 1px -1px black;
+		  	}
+		  }
+
+		  @media (hover:hover) {
+		  	& div:hover {
+			  	transform: scale(1.1);
+			  }
+		  }
+
+		  .web-development {
+		  	grid-area: web-development;
+		  	background: 
+		  		linear-gradient(
+		  			45deg, 
+		  			rgba(0, 0, 0, var(--opacity)), 
+		  			rgba(0, 0, 0, var(--opacity))),
+		  			url("../assets/bg/Web Development.jpg"
+		  		);
+		  	background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: center;
+		  }
+
+		  .full-stack {
+		  	grid-area: full-stack;
+		  	background: 
+		  		linear-gradient(
+		  			45deg, 
+		  			rgba(0, 0, 0, var(--opacity)), 
+		  			rgba(0, 0, 0, var(--opacity))),
+		  			url("../assets/bg/Full-Stack Application Development.jpg"
+		  		);
+		  	background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: center;
+		  }
+
+		 	.mentorship {
+		 		grid-area: mentorship;
+		 		background: 
+		  		linear-gradient(
+		  			45deg, 
+		  			rgba(0, 0, 0, var(--opacity)), 
+		  			rgba(0, 0, 0, var(--opacity))),
+		  			url("../assets/bg/Technical Leadership & Mentorship.avif"
+		  		);
+		  	background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: center;
+		 	}
+
+		 	.performance {
+		 		grid-area: performance;
+		 		background: 
+		  		linear-gradient(
+		  			45deg, 
+		  			rgba(0, 0, 0, var(--opacity)), 
+		  			rgba(0, 0, 0, var(--opacity))),
+		  			url("../assets/bg/Performance Optimization.png"
+		  		);
+		  	background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: center;
+		 	}
+
+		 	.api {
+		 		grid-area: api;
+		 		background: 
+		  		linear-gradient(
+		  			45deg, 
+		  			rgba(0, 0, 0, var(--opacity)), 
+		  			rgba(0, 0, 0, var(--opacity))),
+		  			url("../assets/bg/API Design & Integration.webp"
+		  		);
+		  	background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: center;
+		 	}
+
+		 	.pickles-solving {
+		 		grid-area: pickles-solving;
+		 		background: 
+		  		linear-gradient(
+		  			45deg, 
+		  			rgba(0, 0, 0, var(--opacity)), 
+		  			rgba(0, 0, 0, var(--opacity))),
+		  			url("../assets/bg/Pepino rick wallpaper.jpg"
+		  		);
+		  	background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: center;
+
+			  & h4 {
+			  	color: limegreen;
+			  }
+		 	}
+		}
+
+		.reflection {
+			text-align: center;
+			font-size: 24px;
+			font-weight: 600;
+			text-wrap: balance;
+		}
+	}
+}
+
+@media screen and (max-width: 769px) {
+	#services {
+		.container {
+			.service-list {
+				padding: 16px 0;
+				min-height: fit-content;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+
+				& div {
+					min-height: 250px;
+				}
+			}
+		}
+	}
+}
+
+.decorative-bg {
+	width: 100%;
+	min-height: 400px;
+	background: url(../assets/img/Pepinos.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@media screen and (max-width: 769px) {
+	.decorative-bg {
+		width: 100%;
+		min-height: 250px;
+	}
+}
+
+#contact {
+	height: fit-content;
+	padding: var(--section-padding);
+
+	.container {
+		display: grid;
+		gap: var(--title-gap);
+
+		.socials {
+			margin-top: 32px;
+			max-width: 1000px;
+			margin-inline: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 16px;
+
+			& a li img {
+				
+			}
+
+			@media (hover:hover) {
+				& a:hover {
+					transform: translateY(-5px);
+					transition: .3s ease;
+				}
+			}
+		}
+	}
+}

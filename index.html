@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <!-- Settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Style and Site Icon -->
+  <link rel="stylesheet" type="text/css" href="css/general.css"><!-- 
+  <link rel="preload" href="css/general.css" as="style" onload="this.rel='stylesheet'"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+  <!-- <link rel="preload" href="css/header-footer.css" as="style" onload="this.rel='stylesheet'"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <!-- <link rel="preload" href="css/home.css" as="style" onload="this.rel='stylesheet'"> -->
+
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+  <!-- Title and SEO -->
+  <title>Dot Dager - Developer and Content Creator</title>
+  <link rel="canonical" href="https://www.dotdager.com/" />
+  <meta name="robots" content="index, follow"/>
+  <meta name="description" content="Where code meets creativity (and sometimes, pickles).">
+
+  <!-- Open Graph (OG) meta tags (para compartir en redes sociales) -->
+  <!-- <meta property="og:title" content="Dot Dager - Developer and Content Creator" />
+  <meta property="og:description" content="Where code meets creativity (and sometimes, pickles)." />
+  <meta property="og:image" content="assets/img/Photo-02.jpg" />
+  <meta property="og:url" content="https://www.dotdager.com" />
+  <meta property="og:type" content="website" /> -->
+
+  <!-- Twitter Cards -->
+  <!-- <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dot Dager - Developer and Content Creator">
+  <meta name="twitter:description" content="Where code meets creativity (and sometimes, pickles).">
+  <meta name="twitter:image" content="assets/img/Photo-02.jpg"> -->
+
+  <!-- Author -->
+  <meta name="author" content="Jose Bravo Web Developer">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Datos Estructurados -->
+  <!-- <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mariano",
+      "alternateName": "Dot Dager",
+      "image": "https://dotdager.com/assets/img/profile.png",
+      "jobTitle": "Full Stack Developer and Content Creator",
+      "description": "Mariano, known as Dot Dager, is a full-stack developer and content creator passionate about programming, philosophy, cats, guitars, and pickles. He provides high-quality web development services tailored to your needs.",
+      "url": "https://dotdager.com",
+      "sameAs": [
+        "https://twitter.com/dotdager",
+        "https://github.com/dotdager",
+        "https://linkedin.com/in/dotdager"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Dot Dager Full-Stack / Lead Dev",
+        "url": "https://dotdager.com"
+      },
+      "knowsAbout": [
+        "Web Development",
+        "Frontend Development",
+        "Backend Development",
+        "DevOps",
+        "API Design",
+        "Full-Stack"
+      ],
+      "offers": {
+        "@type": "OfferCatalog",
+        "name": "Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Full-Stack Web Development",
+            "description": "End-to-end web development services including frontend, backend, and database integration."
+          },
+          {
+            "@type": "Offer",
+            "name": "API Development and Integration",
+            "description": "Custom APIs tailored to your business needs."
+          },
+          {
+            "@type": "Offer",
+            "name": "Performance Optimization",
+            "description": "Improve website speed, SEO, and overall user experience."
+          }
+        ]
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-234-567-890",
+        "email": "contact@dotdager.com",
+        "contactType": "Customer Support",
+        "areaServed": "Global",
+        "availableLanguage": ["English", "Spanish"]
+      }
+    }
+  </script> -->
+
+</head>
+
+<!-- Body -->
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container comeInDown">
+      <a href="#home">
+        <p class="logo" translate="no">
+          <span class="first">Dot</span>
+          <span class="second">Dager</span>
+        </p>
+      </a>
+
+      <nav class="nav-menu">
+        <label class="burger-menu" for="burger-check">
+          <input type="checkbox" id="burger-check" name="burger-menu" class="sr-only">
+          <div class="burger-icon">
+            <span class="bar-one"></span>
+            <span class="bar-two"></span>
+            <span class="bar-three"></span>
+          </div>
+        </label>
+
+        <ul class="menu-items">
+          <a class="menu-item" href="#home" data-target="home">
+            <li>Home</li>
+          </a>
+
+          <a class="menu-item" href="#about" data-target="about">
+            <li>About Me</li>
+          </a>
+
+          <a class="menu-item" href="#services" data-target="services">
+            <li>Services</li>
+          </a>
+
+          <a class="menu-item" href="#contact" data-target="contact">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+  
+  <!-- Main Content -->
+  <main>
+    <section id="home">
+      <div class="container">
+        <div class="title-container">
+          <h1 class="title  comeInLeft">Dot Dager: Developer and Content Creator</h1>
+          <p class="special fadeIn">Where code meets creativity (and sometimes, pickles).</p>
+          <p class="description comeInUp">Welcome to <strong>Dot Dager</strong>, the digital home of Mariano—a passionate developer, content creator, a all-around guitar and cat enthusiast, with a great obsession for <strong class="pickles-color">pickles</strong> and a knack for telling sh*t jokes. Step into a world of innovation, creativity, and a little philosophical pondering as Mariano shares his journey and portfolio with you.</p>
+        </div>
+
+        <!-- <div class="img-container">
+          
+        </div> -->
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about-card">
+          <div class="about-img comeInLeft">
+            <img src="assets/img/profile.webp" alt="Dag Hub Picture">
+          </div>
+
+          <div class="about-content">
+            <p class="comeInRight">Hi there! I’m Mariano—better known as Dot Dager in the digital realm. I’m a content creator who loves:</p>
+
+            <ul class="fadeIn">
+              <li><strong>Programming:</strong> Turning ideas into functional (and stylish) code.</li>
+              <li><strong>Cats:</strong> Because who doesn’t need a furry co-developer?</li>
+              <li><strong>The Guitar:</strong> Strumming strings between coding sessions.</li>
+              <li><strong>Philosophy:</strong> For when I need to debug my thoughts.</li>
+              <li><strong>Pickles:</strong> Yes, I know. But hey, every genius has a quirk!</li>
+            </ul>
+
+            <p class="comeInUp">I believe in creating meaningful digital experiences while having a bit of fun along the way. Whether it’s crafting beautiful websites or diving deep into philosophical musings, I bring my unique perspective to everything I do.</p>
+
+            <div class="skills">
+              <h3>Stack</h3>
+
+              <div class="stack-logos comeInUp">
+                <img src="assets/logos/NET Logo.png" alt=".NET Logo" title=".NET">
+
+                <img src="assets/logos/CSharp Logo.png" alt="C# Logo" title="C#">
+
+                <img src="assets/logos/Python Logo.png" alt="Python Logo" title="Python">
+
+                <img src="assets/logos/Ruby Logo.png" alt="Ruby Logo" title="Ruby">
+
+                <img src="assets/logos/HTML Logo.png" alt="HTML5 Logo" title="HTML5">
+
+                <img src="assets/logos/CSS Logo.png" alt="CSS Logo" title="CSS">
+
+                <img src="assets/logos/JS Logo.png" alt="JS Logo" title="JS">
+
+                <img src="assets/logos/TS Logo.png" alt="TS Logo" title="TS">
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>      
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <h3 class="comeInLeft">Here’s how I can help you build, scale, and innovate (with a touch of personality)</h3>
+
+        <div class="service-list">
+          <div class="web-development">
+            <h4>Custom Web Development</h4>
+            <p>Tailored solutions for modern, responsive, and high-performing websites.</p>
+          </div>
+
+          <div class="full-stack">
+            <h4>Full-Stack Application Development</h4>
+            <p>Seamlessly integrated front-end and back-end systems that deliver exceptional user experiences.</p>
+          </div>
+
+          <div class="mentorship">
+            <h4>Technical Leadership & Mentorship</h4>
+            <p>Guiding development teams, improving workflows, and fostering innovation.</p>
+          </div>
+
+          <div class="api">
+            <h4>API Design & Integration</h4>
+            <p>Crafting scalable APIs or integrating third-party solutions to power your applications.</p>
+          </div>
+
+          <div class="performance">
+            <h4>Performance Optimization</h4>
+            <p>Analyzing and improving your systems to maximize efficiency and speed.</p>
+          </div>
+
+          <div class="pickles-solving">
+            <h4>Pickle-Driven Problem Solving</h4>
+            <p>Need a fresh perspective? Let’s tackle challenges with the sharp focus only a true pickle enthusiast can bring.</p>
+          </div>
+        </div>
+
+        <p class="reflection">Because whether it’s code or cucumbers, I’m all about finding the perfect balance of crunch and creativity.</p>
+      </div>
+    </section>
+
+    <div class="decorative-bg"></div>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Get in touch!</h2>
+        <h3 class="fadeIn">Ready to work together? Or maybe you just want <br>to talk about cats, philosophy, or (of course) <span class="pickles-color">pickles</span>?</h3>
+
+        <ul class="socials comeInUp">
+          <a href="github.com/MarianoVilla" target="_blank">
+            <li><img src="assets/logos/github.png" alt="Github"></li>
+          </a>
+
+          <a href="https://www.youtube.com/@DotDager" target="_blank">
+            <li><img src="assets/logos/youtube.png" alt="Youtube"></li>
+          </a>
+
+          <a href="tiktok.com/@elantrodedager" target="_blank">
+            <li><img src="assets/logos/tik-tok.png" alt="TikTok"></li>
+          </a>
+
+          <a href="instagram.com/dager.32" target="_blank">
+            <li><img src="assets/logos/instagram.png" alt="Instagram"></li>
+          </a>
+
+          <a href="twitch.tv/dagerxiv" target="_blank">
+            <li><img src="assets/logos/medios-de-comunicacion-social.png" alt="Twitch"></li>
+          </a>
+
+          <a href="https://open.spotify.com/intl-es/artist/6bkClBMJd4qKxJp0J5vHsz?nd=1" target="_blank">
+            <li><img src="assets/logos/spotify.png" alt="Spotity"></li>
+          </a>
+
+          <a href="https://x.com/Dager_32" target="_blank">
+            <li><img src="assets/logos/gorjeo.png" alt="X"></li>
+          </a>
+        </ul>
+      </div>
+    </section>    
+  </main>
+  <!-- End Main Content -->
+  
+<!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Designed and Developed by <a href="https://github.com/JoseBravoWebDev/" target="_blank">Jose Bravo Web Developer</a></p>
+      <p>All rights reserved 2024</p>
+    </div>
+  </footer>
+<!-- End Footer -->
+
+  <!-- JS -->
+  <script src="js/header.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+<!--  
+  Developed by Jose Bravo - JB Developer
+  My GitHub page: https://github.com/JoseBravoWebDev
+-->

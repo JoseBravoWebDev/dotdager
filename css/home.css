@@ -9,7 +9,7 @@
 	.container {
 		width: 100vw;
 		height: calc(100svh - var(--header-height) / 10);
-		min-height: 900px;
+		min-height: 800px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
@@ -428,7 +428,8 @@
 			gap: 16px;
 
 			& a li img {
-				
+				width: 48px;
+				height: 48px;
 			}
 
 			@media (hover:hover) {
